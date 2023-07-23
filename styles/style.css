@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--clr-grey);
+}
+
+/* global css */
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+:root {
+  --clr-sky-blue: #0d6efd;
+  --clr-grey: #f2f3f7;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  /* customize */
+  background-color: #1c2042;
+  color: white;
+  border: 2px solid #1c2042;
+}
+
+.form {
+  width: 33rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.invoice-container {
+  width: 100%;
+  background-color: #fff;
+  padding: 1.5rem;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.14);
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+#date {
+  font-weight: 500;
+}
+.date-container {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 1rem;
+}
+.current-date {
+}
+.invoice-container label {
+  font-weight: 600;
+}
+.invoice-number input {
+  width: 4rem;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--clr-grey);
+  font-weight: 400;
+}
+.due-date input {
+  width: 9rem;
+
+  border-radius: 5px;
+  border: none;
+  background-color: var(--clr-grey);
+  margin: auto;
+  padding: 0.5rem;
+}
+.bill-container {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.bill-to,
+.bill-from {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.bill-to input,
+.bill-from input {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--clr-grey);
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.bill-to input ::placeholder,
+.bill-from input ::placeholder {
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 576px) {
+}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops) */
+
+@media (min-width: 991px) {
+}
+
+/* Extra large devices (large desktops) */
+
+@media (min-width: 1200px) {
+}

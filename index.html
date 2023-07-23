@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>invoice generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <form class="form" id="form">
+    <div class="invoice-container">
+      <div class="head">
+        <div class="date-container">
+          <p class="current-date">current date : <span id="date">7/23/2023</span> </p>
+          <p class="due-date">Due Date: <input type="date" name="date" id="date"></p>
+        </div>
+        <div class="invoice-number">
+          <label for="invoice">Invoice Number:</label>
+          <input type="number" name="invoice" id="invoice">
+        </div>
+      </div>
+      <hr class="divider">
+      <div class="bill-container">
+        <div class="bill-to">
+          <p class="title">Bill to:</p>
+          <input type="text" id="invoice-to" placeholder="who is the invoice to?">
+          <input type="text" id="email-to" placeholder="Email address">
+          <input type="text" id="billing-to" placeholder="billing address">
+        </div>
+        <div class="bill-from">
+          <p class="title">Bill form:</p>
+          <input type="text" id="invoice-from" placeholder="who is the invoice from?">
+          <input type="text" id="email-from" placeholder="Email address">
+          <input type="text" id="billing-from" placeholder="billing address">
+        </div>
+      </div>
+      <div class="add-item-container">
+        <div class="add-item">
+          <hr class="divider">
+          <div class="tag-container">
+            <span>ITEM</span>
+            <span>QUY</span>
+            <span>PRICE/RATE</span>
+            <span>ACTION</span>
+          </div>
+          <button type="button">Add item</button>
+        </div>
+        <div class="total-container">
+          <div class="item-row">
+            <label for="sub-total">Subtotal:</label>
+            <input type="number" name="sub-total" id="sub-total">
+          </div>
+          <div class="item-row">
+            <label for="discount">Discount:</label>
+            <input type="number" name="discount" id="discount">
+          </div>
+          <div class="item-row">
+            <label for="tax">Tax:</label>
+            <input type="number" name="tax" id="tax">
+          </div>
+          <hr class="divider">
+          <div class="item-row">
+            <label for="total">Tax:</label>
+            <input type="number" name="total" id="total">
+          </div>
+          <hr class="divider">
+          <div class="notes-container">
+            <label for="notes">Notes</label>
+            <textarea name="notes" id="notes" cols="30" rows="10" placeholder="Thanks for your business"></textarea>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="submit-container">
+      <button type="submit" class="btn-submit">Review Invoice</button>
+      <hr class="divider">
+      <div class="items-row">
+        <label for="currency">Currency:</label>
+        <select name="currency" id="currency">
+          <option value="1">USD (United States Dollar)</option>
+          <option value="2">GBP (British Pound Sterling)</option>
+          <option value="3">JPY (Japanese Yen)</option>
+          <option value="4">CAD (Canadian Dollar)</option>
+        </select>
+      </div>
+      <div class="items-row">
+        <label for="tax-rate">Tax rate:</label>
+        <input type="number" name="tax-rate" id="tax-rate">
+      </div>
+      <div class="items-row">
+        <label for="discount-rate">Discount rate:</label>
+        <input type="number" name="discount-rate" id="discount-rate">
+      </div>
+
+    </div>
+  </form>
+  <script src="./javascript/script.js"></script>
+</body>
+
+</html>
